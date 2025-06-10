@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+body {
+  background-color: #112d4e;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-input-container {
+  background-color: #fff;
+  padding: 20px 40px;
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-input-container input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #dbe2ef;
+}
+.todo-input-container button {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #aaaaaa;
+  opacity: 0.8;
+  color: #112d4e;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todos-container {
+  margin-top: 10px;
+  width: 600px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.todo {
+  background-color: #dbe2ef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.todo button {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: transparent;
+}
+.todo li {
+  list-style: none;
+  font-size: 1.5rem;
+  color: #112d4e;
+}
+button i {
+  pointer-events: none;
+}
+.complete {
+  background-color: #54fa5f;
+}
+.deleteBtn:hover {
+  color: #b91f0d;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
